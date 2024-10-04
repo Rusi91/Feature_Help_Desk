@@ -6,6 +6,7 @@ import pyautogui
 
 class HelpDesk:
 
+    # später nur noch default init da root nicht mehr notwendig
     def __init__(self):
         self.root = customtkinter.CTk()
         self.root.geometry(self.get_screen_resolution())
@@ -16,9 +17,12 @@ class HelpDesk:
         customtkinter.set_default_color_theme(theme_color)
 
     def set_title(self, title:str):
-        self.root.title("Gerresheimer")
+        self.root.title(title)
 
     def get_screen_resolution(self):
         screen_resolution = pyautogui.size()
         resolution_str = str(screen_resolution.width) + "x" + str(screen_resolution.width)
         return resolution_str
+    
+    def loop(self):
+        self.root.mainloop()

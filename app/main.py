@@ -54,9 +54,9 @@ name_val = StringVar()
 contact_val = StringVar()
 machine_val = StringVar()
 
-name_entry = Entry(root, textvariable=name_val, width=25, bd=2, font=20)
-contact_entry = Entry(root, textvariable=contact_val, width=25, bd=2, font=20)
-machine_entry = Entry(root, textvariable=machine_val, width=18, bd=2, font=20)
+name_entry = Entry(root, textvariable=name_val, width=25, bd=2, font=1)
+contact_entry = Entry(root, textvariable=contact_val, width=25, bd=2, font=2)
+machine_entry = Entry(root, textvariable=machine_val, width=18, bd=2, font=2)
 
 # priority
 priority_combobox = Combobox(root, values=["Kritisch", "Hoch", "Normal", "Niedrig"], font="arial 14", state="r", width=14)
